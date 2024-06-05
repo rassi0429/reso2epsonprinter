@@ -1,0 +1,1 @@
+{"host":"COM4","baudRate":9600,"asImage":false,"cpl":48,"encoding":"shiftjis","gradient":true,"gamma":1.8,"threshold":128,"upsideDown":false,"spacing":true,"cutting":true,"command":"epson","resolution":203,"server":{"port":3001}}
