@@ -1,5 +1,5 @@
 const express = require('express');
-const SerialPort = require('serialport');
+const {SerialPort} = require('serialport');
 const { transform } = require('receiptline');
 const fs = require('fs');
 
