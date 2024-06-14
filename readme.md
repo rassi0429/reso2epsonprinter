@@ -6,7 +6,7 @@ TMシリーズ（でなくても行ける）のUSB接続に仮想シリアルポ
 
 をインストールし、任意のCOMポートにプリンターを割り当ててください。
 
-![image](https://hackmd.io/_uploads/ryw12FYSA.png)
+![image](https://hackmd.io/_uploads/S1cGMutS0.png)
 
 `config.json`　の`host`を割り当てたCOMポートに編集します
 
