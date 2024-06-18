@@ -5,6 +5,11 @@ const fs = require('fs');
 
 const app = express();
 
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({limit: '50mb'}));
+
+app.use(express.text({ type: 'text/plain', limit: '10mb' }));
+
 fs.readFile("config.json", "utf-8", (err, data) => {
     if (err) {
         console.error("Error reading config file", err);
@@ -12,8 +17,6 @@ fs.readFile("config.json", "utf-8", (err, data) => {
     }
 
     const printer = JSON.parse(data);
-
-    fs.writeFileSync("config.json", JSON.stringify(printer));
 
     app.use(express.text());
 
